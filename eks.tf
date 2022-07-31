@@ -51,6 +51,4 @@ module "eks_blueprints" {
   }
 
   tags = local.tags
-
-  depends_on = [module.vpc.vpc_id]
 }
