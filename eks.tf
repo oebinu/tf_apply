@@ -28,7 +28,7 @@ data "aws_eks_cluster" "this" {
 ################################################################
 
 module "eks_blueprints" {
-  source = "https://github.com/oebinu/terraform-aws-oebinu-print"
+  source = "https://github.com/oebinu/terraform-aws-oebinu-print?ref=v1.0.0"
 
   cluster_name    = local.cluster_name
   cluster_version = "1.21"
