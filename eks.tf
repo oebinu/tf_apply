@@ -31,7 +31,7 @@ module "eks_blueprints" {
   source  = "app.terraform.io/oebinu-blue/oebinu-print/aws"
   version = "1.0.0"
   
-  cluster_name    = local.cluster_name
+  cluster_name    = local.name
   cluster_version = "1.22"
 
   vpc_id             = module.vpc.vpc_id
