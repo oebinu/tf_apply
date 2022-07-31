@@ -7,7 +7,7 @@ provider "aws" {
 locals {
   name = basename(path.cwd)
   # var.cluster_name is for Terratest
-#   cluster_name = coalesce(var.cluster_name, local.name)
+  cluster_name = coalesce(var.cluster_name, local.name)
   region       = "ap-northeast-2"
 
   vpc_cidr = "200.0.0.0/16"
